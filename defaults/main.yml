@@ -1,0 +1,10 @@
+---
+php_fpm_version: "5.5.9+dfsg-1ubuntu4.4"
+php_fpm_upload_max_filesize: "10M"
+php_fpm_post_max_size: "10M"
+php_fpm_env:
+  - { name: "HOSTNAME", value: "$HOSTNAME" }
+  - { name: "PATH", value: "/usr/local/bin:/usr/bin:/bin" }
+  - { name: "TMP", value: "/tmp" }
+  - { name: "TMPDIR", value: "/tmp" }
+  - { name: "TEMP", value: "/tmp" }
