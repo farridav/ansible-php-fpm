@@ -361,7 +361,7 @@ chdir = /
 ; the current environment.
 ; Default Value: clean env
 {% for env in php_fpm_env %}
-env[{{ env.name }}] = {{ env.value }}
+env[{{ env.name }}] = "{{ env.value }}"
 {% endfor %}
 
 ; Additional php.ini defines, specific to this pool of workers. These settings
