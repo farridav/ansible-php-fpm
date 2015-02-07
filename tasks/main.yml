@@ -1,6 +1,6 @@
 ---
 - name: Install PHP-FPM
-  apt: pkg=php5-fpm={{ php_fpm_version }} state=present
+  apt: pkg=php5-fpm{% if php_fpm_version %}={{ php_fpm_version }}{% endif %} state=present
 
 - name: Configure PHP
   template: src=php.ini.j2 dest=/etc/php5/fpm/php.ini

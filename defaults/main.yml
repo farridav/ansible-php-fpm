@@ -1,5 +1,5 @@
 ---
-php_fpm_version: "5.5.9+dfsg-1ubuntu4.4"
+php_fpm_version: ""
 php_fpm_upload_max_filesize: "10M"
 php_fpm_post_max_size: "10M"
 php_fpm_env:
